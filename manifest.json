@@ -1,0 +1,20 @@
+{
+	"manifest_version": 2,
+	"name": "YT Open Video as Embed",
+	"version": "1.0",
+	"content_scripts": [{
+        "matches": [
+            "https://*.youtube.com/*",
+            "https://www.youtube-nocookie.com/embed/*"
+        ]
+	}],
+	
+	"description": "Gives a right-click menu option to open a youtube video as an embed. (full window, faster)",
+	
+	"background": {
+		"scripts": ["background.js"]
+	},
+	
+	"permissions": ["menus"]
+}
+
